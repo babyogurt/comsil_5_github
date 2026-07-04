@@ -26,9 +26,10 @@ int k=0;
                 else { k=0; break;}
 
             
-            }if(k==1) break;
+            }
+            
+        }if(k==1) break;
         else continue;
-        }
         
     }
     if(k==0) cout<<"No";

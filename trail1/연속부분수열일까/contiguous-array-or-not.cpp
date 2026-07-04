@@ -16,7 +16,7 @@ int main() {
         cin>>b[i];
     }
 int k=0;
-    for(int i=0;i<n1;i++){
+    for(int i=0;i<=n1-n2;i++){
         if(a[i]==b[0]){
             
             for(int idx=i;idx<i+n2;idx++){

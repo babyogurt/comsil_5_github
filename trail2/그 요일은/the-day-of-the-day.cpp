@@ -18,7 +18,7 @@ bool week(string a,int n){
 
     for(int i=0;i<7;i++){
         if(A[i]==a){
-            if(n>i) return true;
+            if(n>=i) return true;
             else return false;
         }
         
@@ -33,7 +33,7 @@ int main() {
     string A;
     cin>>A;
 
-    int dff=day(c,d)-day(a,b)+1;
+    int dff=day(c,d)-day(a,b);
 
     
     if(week(A,dff%7)){

@@ -19,7 +19,7 @@ int main() {
 
     int max=0;
 
-    for(int i=0;i<200;i++){
+    for(int i=0;i<201;i++){
         if(arr[max]<arr[i]){
             max=i;
         }

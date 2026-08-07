@@ -28,16 +28,15 @@ int main() {
 
 
     for(int i=0;i<n;i++){
-        int T=t[i];
         if(d[i]=='R'){
-            while(T--){
+            while(t[i]--){
                 A[timea]=A[timea-1]+1;
                 timea++;
 
             }
         }
         else if(d[i]=='L'){
-            while(T--){
+            while(t[i]--){
                 A[timea]=A[timea-1]-1;
                 timea++;
 
@@ -46,16 +45,15 @@ int main() {
     }
 
     for(int i=0;i<m;i++){
-        int T=t_b[i];
         if(d_b[i]=='R'){
-            while(T--){
+            while(t_b[i]--){
                 B[timeb]=B[timeb-1]+1;
                 timeb++;
 
             }
         }
         else if(d_b[i]=='L'){
-            while(T--){
+            while(t_b[i]--){
                 B[timeb]=B[timeb-1]-1;
                 timeb++;
 

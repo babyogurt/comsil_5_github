@@ -15,14 +15,15 @@ int main() {
     int num[100]={};
 
     for(int i=0;i<M;i++){
-        num[student[i]]++;
+        int id=student[i];
+        num[id]++;
 
-        for(int j=0;j<N;j++){
-        if(num[j]>=K){
-            cout<<j;
+        
+        if(num[id]>=K){
+            cout<<id;
             return 0;
         }
-    }
+    
     }
     cout<<"-1";
 

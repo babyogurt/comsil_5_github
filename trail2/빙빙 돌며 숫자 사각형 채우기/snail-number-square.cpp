@@ -26,13 +26,11 @@ int main() {
         nc=c+dc[dir];
         if(!InRange(nr,nc,n,m) || arr[nr][nc]!=0){
             dir=(dir+1)%4;
-            nr=r+dr[dir];
-            nc=c+dc[dir];
 
         }
         
-            r=nr;
-            c=nc;
+            r+=dr[dir];
+            c+=dc[dir];
             arr[r][c]=k;    
         
     }

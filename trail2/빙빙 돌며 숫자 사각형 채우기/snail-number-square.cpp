@@ -21,12 +21,10 @@ int main() {
     int nr=r+dr[dir],nc=c+dc[dir];
     arr[r][c]=1;
 
-    int k=1;
-
     for(int k=2;k<=n*m;k++){
         nr=r+dr[dir];
         nc=c+dc[dir];
-        if(arr[nr][nc]!=0 || !InRange(nr,nc,n,m)){
+        if(!InRange(nr,nc,n,m) || arr[nr][nc]!=0){
             dir=(dir+1)%4;
             nr=r+dr[dir];
             nc=c+dc[dir];

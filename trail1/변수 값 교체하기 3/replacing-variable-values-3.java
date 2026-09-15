@@ -1,0 +1,11 @@
+public class Main {
+    public static void main(String[] args) {
+        // Please write your code here.
+        int a=3,b=5;
+        int tmp=a;
+        a=b;
+        b=tmp;
+
+        System.out.print(a+"\n"+b);
+    }
+}

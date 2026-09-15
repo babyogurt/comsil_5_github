@@ -8,7 +8,7 @@ public class Main {
         String[] strArr = s.split(":");
 
         int h = Integer.parseInt(strArr[0]);
-        int m = Integer.parseInt(strArr[1]);
+        String m = strArr[1];
 
         h++;
         System.out.print(h+":"+m);
